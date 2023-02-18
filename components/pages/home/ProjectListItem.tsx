@@ -13,17 +13,17 @@ export function ProjectListItem(props: ProjectProps) {
   return (
     <div
       className={`flex flex-col gap-x-5 p-2 transition hover:bg-gray-50/50 xl:flex-row ${
-        odd && 'border-t border-b xl:flex-row-reverse'
+        odd && 'border-t xl:flex-row-reverse'
       }`}
     >
-      <div className="w-full xl:w-9/12">
+      <div className="w-1/2 xl:w-9/12">
         <ImageBox
           image={project.coverImage}
           alt={`Cover image from ${project.title}`}
           classesWrapper="relative aspect-[16/9]"
         />
       </div>
-      <div className="flex xl:w-1/4">
+      <div className="flex xl:w-1/2">
         <TextBox project={project} />
       </div>
     </div>
