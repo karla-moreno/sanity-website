@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@headlessui/react': ^1.7.11
+  '@heroicons/react': ^2.0.16
   '@next/font': ^13.1.1
   '@portabletext/react': ^2.0.0
   '@sanity/demo': ^1.0.1
@@ -8,7 +10,7 @@ specifiers:
   '@sanity/vision': ^3.2.1
   '@tailwindcss/typography': ^0.5.9
   '@types/react': ^18.0.26
-  '@vercel/og': ^0.0.21
+  '@vercel/og': ^0.1.0
   autoprefixer: ^10.4.13
   classnames: ^2.3.2
   date-fns: ^2.29.3
@@ -35,13 +37,15 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
+  '@headlessui/react': 1.7.11_biqbaboplfbrettd7655fr4n2y
+  '@heroicons/react': 2.0.16_react@18.2.0
   '@next/font': 13.1.6
   '@portabletext/react': 2.0.1_react@18.2.0
   '@sanity/demo': 1.0.2_tailwindcss@3.2.7
   '@sanity/image-url': 1.0.2
   '@sanity/vision': 3.4.0_23mhwjhnzfjwvdn7ol54k26zom
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
-  '@vercel/og': 0.0.21
+  '@vercel/og': 0.1.0
   classnames: 2.3.2
   date-fns: 2.29.3
   intl-segmenter-polyfill: 0.4.4
@@ -728,6 +732,26 @@ packages:
       '@floating-ui/dom': 1.2.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@headlessui/react/1.7.11_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-EaDbVgcyiylhtskZZf4Qb/JiiByY7cYbd0qgZ9xm2pm2X7hKojG0P4TaQYKgPOV3vojPhd/pZyQh3nmRkkcSyw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@heroicons/react/2.0.16_react@18.2.0:
+    resolution: {integrity: sha512-x89rFxH3SRdYaA+JCXwfe+RkE1SFTo9GcOkZettHer71Y3T7V+ogKmfw5CjTazgS3d0ClJ7p1NA+SP7VQLQcLw==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:
@@ -1614,10 +1638,6 @@ packages:
     resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
     dev: false
 
-  /@types/yoga-layout/1.9.2:
-    resolution: {integrity: sha512-S9q47ByT2pPvD65IvrWp7qppVMpk9WGMbVq9wbWZOHg6tnXSD4vyhao6nOSBwwfDdV2p3Kx9evA9vI+XWTfDvw==}
-    dev: false
-
   /@typescript-eslint/parser/5.52.0_7kw3g6rralp5ps6mg3uyzz6azm:
     resolution: {integrity: sha512-e2KiLQOZRo4Y0D/b+3y08i3jsekoSkOYStROYmPUnGMEoA0h+k2qOH5H6tcjIc68WDvGwH+PaOrP1XRzLJ6QlA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -1720,13 +1740,13 @@ packages:
       - '@codemirror/search'
     dev: false
 
-  /@vercel/og/0.0.21:
-    resolution: {integrity: sha512-WgMahG5c8UM7xtn/mT+ljUpDMSDnSlu8AXL52JtTwxb1odrd0GWqZg2N1X38wulPj+sCccNpDdFmmAuw0GLc+Q==}
+  /@vercel/og/0.1.0:
+    resolution: {integrity: sha512-0M7YT3TKd1bsJ/At46B5EMtxgZBixfTQV5VRnkdd8bTiKAGnzw/li+uORU4pvOyyPLoVQJpzuU0Xx+bbAKu2bQ==}
     engines: {node: '>=16'}
     dependencies:
       '@resvg/resvg-wasm': 2.0.0-alpha.4
-      satori: 0.0.44
-      yoga-wasm-web: 0.1.2
+      satori: 0.2.2
+      yoga-wasm-web: 0.3.0
     dev: false
 
   /@vitejs/plugin-react/3.1.0_vite@4.1.2:
@@ -5484,8 +5504,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /satori/0.0.44:
-    resolution: {integrity: sha512-WKUxXC2qeyno6J3ucwwLozPL6j1HXOZiN5wIUf7iqAhlx1RUC/6ePIKHi7iPc3Cy6DYuZcJriZXxXkSdo2FQHg==}
+  /satori/0.2.2:
+    resolution: {integrity: sha512-/9A9cMdrkSqFPavObgQAn9737hMnBeKSgf/L5zWm2a6UzwMR2jl5xjrH4LURlJLEXdx/ijOjH0/Q6PUn2Fgpdg==}
     engines: {node: '>=16'}
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
@@ -5494,7 +5514,7 @@ packages:
       css-to-react-native: 3.2.0
       emoji-regex: 10.2.1
       postcss-value-parser: 4.2.0
-      yoga-layout-prebuilt: 1.10.0
+      yoga-wasm-web: 0.3.0
     dev: false
 
   /saxes/6.0.0:
@@ -6431,15 +6451,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  /yoga-layout-prebuilt/1.10.0:
-    resolution: {integrity: sha512-YnOmtSbv4MTf7RGJMK0FvZ+KD8OEe/J5BNnR0GHhD8J/XcG/Qvxgszm0Un6FTHWW4uHlTgP0IztiXQnGyIR45g==}
-    engines: {node: '>=8'}
-    dependencies:
-      '@types/yoga-layout': 1.9.2
-    dev: false
-
-  /yoga-wasm-web/0.1.2:
-    resolution: {integrity: sha512-8SkgawHcA0RUbMrnhxbaQkZDBi8rMed8pQHixkFF9w32zGhAwZ9/cOHWlpYfr6RCx42Yp3siV45/jPEkJxsk6w==}
+  /yoga-wasm-web/0.3.0:
+    resolution: {integrity: sha512-rD3L4jyMlO1m+RWU60lNwZQK5zmzglCV5fI1gTRikmpv3YzmNIZQbjyfE6cMNb9Xaly/C1SwemYGbsiOekMvnQ==}
     dev: false
 
   /zip-stream/4.1.0:
