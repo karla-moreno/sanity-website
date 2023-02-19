@@ -17,6 +17,13 @@ export interface MilestoneItem {
   title?: string
 }
 
+export interface HeroBanner{
+  heading?: string
+  subtext?: string
+  buttonLink?: string
+  buttonText?: string
+}
+
 export interface ShowcaseProject {
   _type: string
   coverImage?: Image

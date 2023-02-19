@@ -1,4 +1,5 @@
 import { PortableText, PortableTextComponents } from '@portabletext/react'
+import { HeroBanner } from 'components/global/HeroBanner'
 import ImageBox from 'components/shared/ImageBox'
 import { TimelineSection } from 'components/shared/TimelineSection'
 import { Image, PortableTextBlock } from 'sanity'
@@ -53,6 +54,9 @@ export function CustomPortableText({
       timeline: ({ value }) => {
         const { items } = value || {}
         return <TimelineSection timelines={items} />
+      },
+      heroBanner: ({ value }) => {        
+        return <HeroBanner hero={value} />
       },
     },
   }

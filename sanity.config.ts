@@ -12,6 +12,7 @@ import { deskTool } from 'sanity/desk'
 import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash'
 import page from 'schemas/documents/page'
 import project from 'schemas/documents/project'
+import heroBanner from 'schemas/objects/banner'
 import duration from 'schemas/objects/duration'
 import milestone from 'schemas/objects/milestone'
 import timeline from 'schemas/objects/timeline'
@@ -95,9 +96,10 @@ export default defineConfig({
       duration,
       page,
       project,
-      // Objects
+      // Objects/blocks
       milestone,
       timeline,
+      heroBanner,
       // Int
       localeString,
       article
@@ -123,4 +125,10 @@ export default defineConfig({
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({ defaultApiVersion: apiVersion }),
   ],
+  // parts: [
+  //   {
+  //     "implements": "part:@sanity/base/theme/variables/override-style",
+  //     "path": "styles/adminVarOverrides.css"
+  //   }
+  // ]
 })
